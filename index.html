@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +8,7 @@
     <link rel="icon" href="favicon/BienestarYVida.ico">
     <title>Bienestar y Vida</title>
 </head>
+
 <body>
     <header>
         <nav id="navbar">
@@ -17,7 +19,7 @@
             <a class="ePrincipal" href="#trabajaConNosotros">CV</a>
             <a class="ePrincipal" href="#contacto">Contacto</a>
         </nav>
-
+    
         <div class="container">
             <img src="img/imgPrincipal.jpg" alt="Manos de una abuela" height="50%" width="100%">
             <p>Dirección: Cochabamba 3578 - Boedo, Capital <br>
@@ -25,23 +27,67 @@
             </p>
         </div>
     </header>
-
+    
     <section id="servicios">
         <h3>Nuestros servicios</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, laborum. 
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, laborum.
             Molestiae ullam enim aliquid iusto quasi suscipit quibusdam sunt quaerat.</p>
     </section>
-
+    
     <section id="quienesSomos">
         <h3>Sobre Nosotros</h3>
-        <p>La seguridad y la comodidad de nuestros pacientes son siempre nuestra máxima prioridad. 
-            Trabajamos en estrecha colaboración con las familias y los cuidadores para asegurarnos de que todas las necesidades estén cubiertas y que se mantenga una comunicación clara y abierta en todo momento. <br>
-            Además, nos enorgullece ofrecer precios asequibles y planes de atención a largo plazo para garantizar que nuestros clientes reciban la mejor atención posible sin preocupaciones financieras.</p>
-
-            <img style="align-content: end;"
-            src="img/imgConocenos.jpg" alt="Grupo de gente profesional" height="50%" width="50%">
-            <a href="#index">Home</a>  <!--No va a la section principal-->
-        </section>
+        <p>La seguridad y la comodidad de nuestros pacientes son siempre nuestra máxima prioridad.
+            Trabajamos en estrecha colaboración con las familias y los cuidadores para asegurarnos de que todas las
+            necesidades estén cubiertas y que se mantenga una comunicación clara y abierta en todo momento. <br>
+            Además, nos enorgullece ofrecer precios asequibles y planes de atención a largo plazo para garantizar que
+            nuestros clientes reciban la mejor atención posible sin preocupaciones financieras.</p>
     
+        <img style="align-content: end;" src="img/imgConocenos.jpg" alt="Grupo de gente profesional" height="50%"
+            width="50%">
+        <a href="#index">Home</a> <!--No va a la section principal-->
+    </section>
+
+    <section id="trabajaConNosotros">
+        <h2>Trabaja con nosotros</h2>
+        <h4>Datos personales</h4>
+
+        <form class="formularioCV" action="" method="get">
+            <label for="nombreCompleto">Nombre y Apellido: 
+                <input type="text" name="nombreYApellido" id="nombreCompleto" placeholder="Ingrese nombre completo">
+            </label>
+            <br>
+            <br>
+            <label for="NDni">DNI:
+                <input type="number" name="numeroDni" id="NDni" placeholder="Ingrese su DNI">
+            </label>
+            <br>
+            <br>
+            <label for="telefono">Telefono:
+                <input type="datetime" name="numeroDeTelefono" id="telefono" placeholder="Ingrese su numero">
+            </label>
+            <br>
+            <br>
+            <label for="email">Correo Electronico:
+                <input type="email" name="correo" id="email" placeholder="Ingrese su email">
+            </label>
+            <br>
+            <br>
+            <label for="disponibilidadHoraria">Disponibilidad Horaria:
+                <input type="text" id="disponibilidadHoraria" placeholder="Ingrese su disponibilidad horaria">
+            </label>
+            <br>
+            <br>
+            <button id="botonBorrar" type="reset">Borrar</button>
+            <button id="botonEnviar" type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <footer>
+        <br>
+        <h4>Derechos Reservados@2023</h4>
+        <br>
+    </footer>
+
 </body>
+
 </html>
