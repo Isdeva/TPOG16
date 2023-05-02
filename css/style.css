@@ -16,7 +16,9 @@ header {
 nav a {
   text-decoration: none;
   color: white;
+  padding: 10px;
 }
 nav a:hover {
-  color: gray;
+  color: rgb(161, 161, 161);
+  border-bottom: 2px solid gray;
 }
