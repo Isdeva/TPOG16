@@ -53,6 +53,28 @@
     color: white;
     padding: 0.8em;
 }
+#cv{
+    display: none;
+}
+#btnCv{
+ display: block;
+ padding: 1em 1.5em;
+ border: none;
+ color: #fff;
+ background-color:#238575;
+ border-radius: 0.2rem;
+ cursor: pointer;
+ border-bottom: 0.3rem solid #238575;
+ text-align: center;
+ font-size: 1rem;
+}
+
+#btnCv:hover{
+ transition: all .4s;
+ background-color:rgb(60, 114, 216);
+ border-bottom:  rgb(60, 114, 216);
+}
+
 #botonBorrar{
     background-color: rgb(95, 80, 80);
     text-align: right;
