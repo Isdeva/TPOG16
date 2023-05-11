@@ -1,119 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="favicon/BienestarYVida.ico">
-    <link rel="stylesheet" href="css/sytleForm.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="icon" href="./img/logo.ico" />
     <title>Bienestar y Vida</title>
-</head>
-
-<body>
-    <header>
-        <nav id="navbar">
-            <img src="favicon/BienestarYVida.ico" alt="">
-            <a class="ePrincipal" href="#index">Home</a>
-            <a class="ePrincipal" href="#servicios">Servicios</a>
-            <a class="ePrincipal" href="#quienesSomos">Sobre Nosotros</a>
-            <a class="ePrincipal" href="#trabajaConNosotros">CV</a>
-            <a class="ePrincipal" href="#contacto">Contacto</a>
-        </nav>
-
-        <div class="container">
-            <img src="img/imgPrincipal.jpg" alt="Manos de una abuela" height="50%" width="100%">
-            <p>Dirección: Cochabamba 3578 - Boedo, Capital <br>
-                Horario de Atención: lunes a viernes de 9 a 17hs
-            </p>
-        </div>
+  </head>
+  <body>
+    <header id="header">
+      <a href="index.html" class="logo"><img src="./img/logo.png" alt="" /></a>
+      <nav>
+        <a href="">Principal</a><a href="#nosotros">Sobre nosotros</a><a href="#servicios">Nuestros servicios</a
+        ><a href="#contacto">Contactos</a>
+      </nav>
     </header>
+    <main>
+      <section class="container">
+        <img src="img/imgPrincipal.jpg" alt="Manos de una abuela" height="50%" width="100%" />
+        <p>
+          Dirección: Cochabamba 3578 - Boedo, Capital <br />
+          Horario de Atención: lunes a viernes de 9 a 17hs
+        </p>
+      </section>
 
-    <section id="servicios">
-        <h3>Nuestros servicios</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, laborum.
-            Molestiae ullam enim aliquid iusto quasi suscipit quibusdam sunt quaerat.</p>
-    </section>
+      <section id="nosotros">
+        <h2>Sobre nosotros</h2>
+        <p>
+          La seguridad y la comodidad de nuestros pacientes son siempre nuestra máxima prioridad. Trabajamos en estrecha
+          colaboración con las familias y los cuidadores para asegurarnos de que todas las necesidades estén cubiertas y
+          que se mantenga una comunicación clara y abierta en todo momento. Además, nos enorgullece ofrecer precios
+          asequibles y planes de atención a largo plazo para garantizar que nuestros clientes reciban la mejor atención
+          posible sin preocupaciones financieras.
+        </p>
+        <img src="./img/imgConocenos.jp" alt="" />
+        <section id="servicios">
+          <img src="./img/imgCuidadores.jp" alt="" />
+          <h2>Coordinación profesional los 365 días del año</h2>
+          <p>
+            Bienestar y vida, entiende que la atención domiciliaria es una tarea importante y delicada que requiere
+            habilidades y conocimientos especializados. Es por eso que nos enorgullece contar con algunos de los mejores
+            profesionales de atención domiciliaria del sector. Nuestros cuidadores están altamente capacitados,
+            experimentados y dedicados a proporcionar la mejor atención posible a sus seres queridos.
+          </p>
+        </section>
+      </section>
 
-    <section id="quienesSomos">
-        <h3>Sobre Nosotros</h3>
-        <p>La seguridad y la comodidad de nuestros pacientes son siempre nuestra máxima prioridad.
-            Trabajamos en estrecha colaboración con las familias y los cuidadores para asegurarnos de que todas las
-            necesidades estén cubiertas y que se mantenga una comunicación clara y abierta en todo momento. <br>
-            Además, nos enorgullece ofrecer precios asequibles y planes de atención a largo plazo para garantizar que
-            nuestros clientes reciban la mejor atención posible sin preocupaciones financieras.</p>
-
-        <img style="align-content: end;" src="img/imgConocenos.jpg" alt="Grupo de gente profesional" height="50%"
-            width="50%">
-        <a href="#index">Home</a> <!--No va a la section principal-->
-    </section>
-
-    <section id="trabajaConNosotros">
-        <div class="cabecera">
-            <h2>Trabaja con nosotros</h2>
-            <h4>Datos personales</h4>
-        </div>
-        <div class="contenedor">
-            <form id="form" action="" method="get" >
-
-                <div class="form-control">
-                    <label for="nombreCompleto">Nombre y Apellido</label>
-                    <input type="text" id="nombreCompleto">
-                    <small></small>
-                </div>
-
-                <!-- <div class="form-control">
-                <label for="NDni">DNI</label>
-                <input type="text"  id="NDni">
-                <small></small>
-            </div> -->
-
-                <div class="form-control">
-                    <label for="tele">Telefono</label>
-                    <input type="text" id="tele">
-                    <small></small>
-                </div>
-
-                <div class="form-control">
-                    <label for="email">E-mail</label>
-                    <input type="email" id="email">
-                    <small></small>
-                </div>
-
-                <div class="form-control">
-                    <label for="timezone">Disponilidad Horaria</label>
-                    <select name="" id="timezone">
-                        <option value="8 a 16">8hs a 16hs</option>
-                        <option value="10 a 19">10hs a 19hs</option>
-                        <option value="14 a 19">14hs a 21hs</option>
-                        <option value="18 a 22">18hs a 00hs</option>
-                        <option value="12 a 6">00hs a 07hs</option>
-                        <option value="otro">Otro</option>
-                    </select>
-                    <small></small>
-                </div>
-
-                <div class="form-control">
-                    <!-- <label for="cv">Cargar CV</label> -->
-                    <input type="file" id="cv">
-                    <input type="button" value="Carga tu CV aca" id="btnCv"
-                    onclick="document.getElementById('cv').click()">
-                    <small></small>
-                </div>
-
-                <button id="botonBorrar" type="reset">Borrar</button>
-                <button id="botonEnviar" type="submit">Enviar</button>
-            </form>
-        </div>
-    </section>
-
-    <script src="js/validacionForm.js"></script>
+      <section id="contacto">
+        <h2>Contactos</h2>
+        <form action="#" method="get">
+          <fieldset>
+            <legend>Contactos</legend>
+            <label for="name">Nombre y apellido</label>
+            <input type="text" name="name" id="name" placeholder="Ingrese su nombre" />
+            <label for="phone">Teléfono</label>
+            <input type="number" name="phone" id="phone" placeholder="Ingrese su teléfono" />
+            <label for="email">Correo electrónico</label>
+            <input type="email" name="email" id="email" placeholder="Ingrese su correo electrónico" />
+            <label for="mesage">Cuerpo del mensaje</label>
+            <textarea name="mesage" id="mesage" cols="30" rows="10"></textarea>
+          </fieldset>
+          <button type="submit">Enviar</button>
+        </form>
+      </section>
+    </main>
     <footer>
-        <br>
-        <h4>Derechos Reservados@2023</h4>
-        <br>
+      <br />
+      <h4>Derechos Reservados@2023</h4>
+      <br />
     </footer>
-
-</body>
-
+  </body>
 </html>
