@@ -1,75 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/style.css" />
-    <link rel="icon" href="favicon/logo.ico" />
-    <title>Bienestar y Vida</title>
-  </head>
-  <body>
-    <header id="header">
-      <a href="index.html" class="logo"><img src="./img/logo.png" alt="" /></a>
-      <nav>
-        <a href="">Principal</a><a href="#nosotros">Sobre nosotros</a><a href="#servicios">Nuestros servicios</a>
-        <a href="#contacto">Contactos</a>
-        <a href="cv.html">Trabaja con nosotros</a>
-      </nav>
-    </header>
-    <main>
-      <section class="container">
-        <img src="img/imgPrincipal.jpg" alt="Manos de una abuela" height="50%" width="100%" />
-        <p>
-          Dirección: Cochabamba 3578 - Boedo, Capital <br />
-          Horario de Atención: lunes a viernes de 9 a 17hs
-        </p>
-      </section>
 
-      <section id="nosotros">
-        <h2>Sobre nosotros</h2>
-        <p>
-          La seguridad y la comodidad de nuestros pacientes son siempre nuestra máxima prioridad. Trabajamos en estrecha
-          colaboración con las familias y los cuidadores para asegurarnos de que todas las necesidades estén cubiertas y
-          que se mantenga una comunicación clara y abierta en todo momento. Además, nos enorgullece ofrecer precios
-          asequibles y planes de atención a largo plazo para garantizar que nuestros clientes reciban la mejor atención
-          posible sin preocupaciones financieras.
-        </p>
-        <img src="./img/imgConocenos.jp" alt="" />
-        <section id="servicios">
-          <img src="./img/imgCuidadores.jp" alt="" />
-          <h2>Coordinación profesional los 365 días del año</h2>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="favicon/logo.ico" />
+  <title>Bienestar y Vida</title>
+</head>
+
+<body>
+  <header id="header">
+    <a href="index.html" class="logo"><img src="./img/logo.png" alt="" /></a>
+    <nav>
+      <a href="">Principal</a><a href="#nosotros">Sobre nosotros</a><a href="#servicios">Nuestros servicios</a>
+      <a href="#contacto">Contactos</a>
+      <a href="cv.html">Trabaja con nosotros</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="container">
+      <img src="img/imgPrincipal.jpg" alt="Manos de una abuela" height="50%" width="100%" />
+      <p>
+        Dirección: Cochabamba 3578 - Boedo, Capital <br />
+        Horario de Atención: lunes a viernes de 9 a 17hs
+      </p>
+    </section>
+
+    <section id="nosotros">
+      <h2>Sobre nosotros</h2>
+      <p>
+        La seguridad y la comodidad de nuestros pacientes son siempre nuestra máxima prioridad. Trabajamos en estrecha
+        colaboración con las familias y los cuidadores para asegurarnos de que todas las necesidades estén cubiertas y
+        que se mantenga una comunicación clara y abierta en todo momento. Además, nos enorgullece ofrecer precios
+        asequibles y planes de atención a largo plazo para garantizar que nuestros clientes reciban la mejor atención
+        posible sin preocupaciones financieras.
+      </p>
+      <img src="./img/imgConocenos.jp" alt="" />
+
+
+      <section id="servicios">
+
+        <div id="contServicio">
+          <h2>Nuestros servicios</h2>
+          <small>Bienestar y vida, entiende que la atención domiciliaria es una tarea importante y delicada que requiere
+            habilidades y conocimientos especializados. Es por eso que nos enorgullece contar con algunos de los mejores
+            profesionales de atención domiciliaria del sector. Nuestros cuidadores están altamente capacitados,
+            experimentados y dedicados a proporcionar la mejor atención posible a sus seres queridos.
+          </small>
+        </div>
+
+        <img src="./img/imgCuidadores.jp" alt="" />
+
+        <div class="cards">
+
+          <div class="content">
+            <img class="iconosServicio" src="img/iconosDeServicios/servicio-de-limpieza.ico" alt="Servicio de limpieza">
+            <h3>Higene y Confort</h3>
+            <ul>
+              <li>Higiene personal asistido.</li>
+              <li>Elaboración de alimentos según dieta o régimen.</li>
+              <li>Administración de medicación y curaciones de heridas.</li>
+              <li>Control de signos vitales.</li>
+            </ul>
+          </div>
+
+          <div class="content">
+            <img class="iconosServicio" src="img/iconosDeServicios/tareas.ico" alt="Tareas generales">
+            <h3>Tareas generales</h3>
+            <ul>
+              <li>Mantenimiento limpieza general.</li>
+              <li>Lavado y planchado de ropa.</li>
+              <li>Compras domésticas, solicitud de turnos, interconsultas y practicas medicas</li>
+              <li>Acompañamiento a citas médicas.</li>
+              <li>Manejo de agenda y su historial de salud.</li>
+            </ul>
+          </div>
+
+          <div class="content">
+            <img class="iconosServicio" src="img/iconosDeServicios/meditacion-_1_.ico" alt="Ejercicios">
+            <h3>Actividades</h3>
+            <ul>
+              <li>Actividades recreativas.</li>
+              <li>Ejercicios de estimulación física para la movilidad y activación muscular.</li>
+              <li>Ejercitación de estimulación cognitiva.</li>
+              <li>Practicas para rehabilitación.</li>
+            </ul>
+          </div>
+
+
+
+        </div>
+        <!--      <h2>Coordinación profesional los 365 días del año</h2>
           <p>
             Bienestar y vida, entiende que la atención domiciliaria es una tarea importante y delicada que requiere
             habilidades y conocimientos especializados. Es por eso que nos enorgullece contar con algunos de los mejores
             profesionales de atención domiciliaria del sector. Nuestros cuidadores están altamente capacitados,
             experimentados y dedicados a proporcionar la mejor atención posible a sus seres queridos.
-          </p>
-        </section>
+          </p> -->
       </section>
+    </section>
 
-      <section id="contacto">
-        <h2>Contactos</h2>
-        <form action="#" method="get">
-          <fieldset>
-            <legend>Contactos</legend>
-            <label for="name">Nombre y apellido</label>
-            <input type="text" name="name" id="name" placeholder="Ingrese su nombre" />
-            <label for="phone">Teléfono</label>
-            <input type="number" name="phone" id="phone" placeholder="Ingrese su teléfono" />
-            <label for="email">Correo electrónico</label>
-            <input type="email" name="email" id="email" placeholder="Ingrese su correo electrónico" />
-            <label for="mesage">Cuerpo del mensaje</label>
-            <textarea name="mesage" id="mesage" cols="30" rows="10"></textarea>
-          </fieldset>
-          <button type="submit">Enviar</button>
-        </form>
-      </section>
-    </main>
-    <footer>
-      <br />
-      <h4>Derechos Reservados@2023</h4>
-      <br />
-    </footer>
-  </body>
+    <section id="contacto">
+      <h2>Contactos</h2>
+      <form action="#" method="get">
+        <fieldset>
+          <legend>Contactos</legend>
+          <label for="name">Nombre y apellido</label>
+          <input type="text" name="name" id="name" placeholder="Ingrese su nombre" />
+          <label for="phone">Teléfono</label>
+          <input type="number" name="phone" id="phone" placeholder="Ingrese su teléfono" />
+          <label for="email">Correo electrónico</label>
+          <input type="email" name="email" id="email" placeholder="Ingrese su correo electrónico" />
+          <label for="mesage">Cuerpo del mensaje</label>
+          <textarea name="mesage" id="mesage" cols="30" rows="10"></textarea>
+        </fieldset>
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <br />
+    <h4>Derechos Reservados@2023</h4>
+    <br />
+  </footer>
+</body>
+
 </html>
