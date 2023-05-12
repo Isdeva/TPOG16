@@ -5,9 +5,11 @@
 }
 header {
   display: flex;
-  background-color: black;
   justify-content: space-between;
   align-items: center;
+  background-color: black;
+  position: fixed;
+  width: 100%;
   padding: 10px;
 }
 .logo img {
@@ -22,4 +24,32 @@ nav a {
 nav a:hover {
   color: rgb(161, 161, 161);
   border-bottom: 2px solid gray;
+}
+#contacto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 1rem;
+  width: 100%;
+}
+#contacto form {
+  display: flex;
+  flex-direction: column;
+  width: 18rem;
+}
+#contacto form fieldset {
+  background-color: rgb(158, 158, 190);
+  border-radius: 0.5rem;
+  border: 0.1rem solid black;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+}
+#contacto form fieldset input {
+  padding-top: 1rem;
+  margin-bottom: 1rem;
+  background-color: rgb(158, 158, 190);
+  border: none;
+  color: rgb(161, 161, 161);
+  border-bottom: 2px solid rgb(0, 0, 0);
 }
