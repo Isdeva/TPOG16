@@ -10,23 +10,26 @@
   </head>
   <body>
     <header id="header">
-      <a href="index.html" class="logo"><img src="./img/logo.png" alt="" /></a>
+      <a href="index.html" class="logo"><img src="img/logo.png" alt="Logo de la empresa" /></a>
       <nav>
-        <a href="">Principal</a><a href="#nosotros">Sobre nosotros</a><a href="#servicios">Nuestros servicios</a>
-        <a href="#contacto">Contactos</a>
-        <a href="cv.html">Trabaja con nosotros</a>
+        <a href="">Principal |</a>
+        <a href="#nosotros">Sobre nosotros |</a>
+        <a href="#servicios">Nuestros servicios |</a>
+        <a href="#contacto">Contactos |</a>
+        <a href="cv.html">Trabajar en Bienestar y Vida</a>
       </nav>
     </header>
     <main>
       <section class="container">
         <img src="img/imgPrincipal.jpg" alt="Manos de una abuela" height="50%" width="100%" />
-        <p>
+        <p class="direccion">
           Dirección: Cochabamba 3578 - Boedo, Capital <br />
           Horario de Atención: lunes a viernes de 9 a 17hs
         </p>
       </section>
 
       <section id="nosotros">
+
         <h2>Sobre nosotros</h2>
         <p>
           La seguridad y la comodidad de nuestros pacientes son siempre nuestra máxima prioridad. Trabajamos en estrecha
@@ -35,9 +38,9 @@
           asequibles y planes de atención a largo plazo para garantizar que nuestros clientes reciban la mejor atención
           posible sin preocupaciones financieras.
         </p>
-        <img src="./img/imgConocenos.jp" alt="" />
+        <img src="img/imgConocenos.jpg" alt="Grupo de gente profesional" height="50%" width="50%" />
+
         <section id="servicios">
-          <img src="./img/imgCuidadores.jp" alt="" />
           <h2>Coordinación profesional los 365 días del año</h2>
           <p>
             Bienestar y vida, entiende que la atención domiciliaria es una tarea importante y delicada que requiere
@@ -45,7 +48,9 @@
             profesionales de atención domiciliaria del sector. Nuestros cuidadores están altamente capacitados,
             experimentados y dedicados a proporcionar la mejor atención posible a sus seres queridos.
           </p>
+          <img src="img/imgCuidadores.jpg" alt="Grupo de gente profesional" />
         </section>
+
       </section>
 
       <section id="contacto">
@@ -53,15 +58,28 @@
         <form action="#" method="get">
           <fieldset>
             <legend>Contactos</legend>
-            <label for="name">Nombre y apellido</label>
+
+            <div>
+              <label for="name">Nombre y apellido</label>
             <input type="text" name="name" id="name" placeholder="Ingrese su nombre" />
-            <label for="phone">Teléfono</label>
-            <input type="number" name="phone" id="phone" placeholder="Ingrese su teléfono" />
-            <label for="email">Correo electrónico</label>
-            <input type="email" name="email" id="email" placeholder="Ingrese su correo electrónico" />
-            <label for="mesage">Cuerpo del mensaje</label>
+            </div>
+
+            <div>
+              <label for="phone">Teléfono</label>
+              <input type="number" name="phone" id="phone" placeholder="Ingrese su teléfono" />  
+            </div>
+
+            <div>
+              <label for="email">Correo electrónico</label>
+              <input type="email" name="email" id="email" placeholder="Ingrese su correo electrónico" />  
+            </div>
+
+            <div>
+              <label for="mesage">Cuerpo del mensaje</label>
             <textarea name="mesage" id="mesage" cols="30" rows="10"></textarea>
-          </fieldset>
+            </div>
+
+           </fieldset>
           <button type="submit">Enviar</button>
         </form>
       </section>
