@@ -2,7 +2,6 @@
     background:linear-gradient(rgb(98, 209, 145), white);
 }
 .contenedor{
-    /* background-color: rgb(43, 204, 156); */
     display: flex; 
     align-items: center;
     justify-content: center;  
@@ -11,8 +10,7 @@
 
 }
 .cabecera{
-/*     background-color: rgb(98, 209, 145);
- */    color:rgb(0, 0, 0);
+   color:rgb(0, 0, 0);
     border-bottom: 0em solid #f0f0f0;
     padding: 0.5em;
     float:inline-start;
