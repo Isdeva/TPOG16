@@ -15,22 +15,6 @@
   float: inline-start;
   text-align: center;
 }
-#form {
-  padding: 2em 2em;
-}
-.form-control {
-  margin-bottom: 1rem;
-  padding-bottom: 1rem;
-  font-weight: bold;
-}
-.form-control label {
-  display: inline-block;
-  margin-bottom: 0.1em;
-  font: weight 2em;
-}
-.form-control input {
-  display: block;
-}
 .form-control,
 input:focus {
   outline: none;
