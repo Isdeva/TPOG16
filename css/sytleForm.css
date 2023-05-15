@@ -1,0 +1,76 @@
+#trabajaConNosotros {
+  background: linear-gradient(rgb(98, 209, 145), white);
+}
+.contenedor {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+.cabecera {
+  color: rgb(0, 0, 0);
+  border-bottom: 0em solid #f0f0f0;
+  padding: 0.5em;
+  float: inline-start;
+  text-align: center;
+}
+.form-control,
+input:focus {
+  outline: none;
+}
+.form-control.ok input {
+  border: 0.1cap solid;
+  border-color: #00d3a5;
+}
+.form-control.falla input {
+  border: 0.1cap solid;
+  border-color: #fe5f55;
+}
+
+#cv {
+  display: none;
+}
+#btnCv {
+  display: block;
+  padding: 1em 1.5em;
+  border: none;
+  color: #fff;
+  background-color: #238575;
+  border-radius: 0.2rem;
+  cursor: pointer;
+  border-bottom: 0.3rem solid #238575;
+  text-align: center;
+  font-size: 1rem;
+}
+
+#btnCv:hover {
+  transition: all 0.4s;
+  background-color: rgb(60, 114, 216);
+  border-bottom: rgb(60, 114, 216);
+}
+
+#botonBorrar {
+  background-color: rgba(95, 80, 80, 0.51);
+  text-align: center;
+}
+#botonBorrar:hover {
+  background-color: red;
+}
+#botonEnviar {
+  background-color: rgb(0, 89, 255);
+  text-align: center;
+}
+#botonEnviar:hover {
+  background-color: rgb(132, 0, 255);
+}
+.form-control small {
+  visibility: hidden;
+  position: absolute;
+  font-size: small;
+  text-align: right;
+}
+.form-control.falla small {
+  visibility: visible;
+  color: #d74c3c;
+}

@@ -4,22 +4,29 @@
   margin: 0;
 }
 header {
+  position: sticky;
+  top: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: black;
+<<<<<<< HEAD
   position: fixed;
+=======
+>>>>>>> main
   width: 100%;
   padding: 10px;
+  z-index: 2;
 }
 .logo img {
   height: 50px;
 }
-nav a {
+header nav a {
   text-decoration: none;
   color: white;
   padding: 10px;
   margin: 10px;
+<<<<<<< HEAD
 }
 nav a:hover {
   color: rgb(161, 161, 161);
@@ -41,10 +48,48 @@ nav a:hover {
   background-color: rgb(158, 158, 190);
   border-radius: 0.5rem;
   border: 0.1rem solid black;
+=======
+  font-weight: bold;
+}
+header nav a:hover {
+  color: gray;
+  border-bottom: 0.2rem solid gray;
+}
+.direccion {
+  text-align: center;
+}
+#carouselExampleFade img {
+  height: 30rem;
+  object-fit: cover;
+  z-index: 1;
+}
+.contenedor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-size: 1.2rem;
+  position: relative;
+}
+.contenedor h2 {
+  padding: 2rem;
+  font-weight: bold;
+}
+.contenedor p {
+  padding: 0 5rem 4rem;
+}
+form {
+  background-color: rgb(255, 255, 255);
+  width: 25rem;
+  border: 2px solid black;
+}
+form fieldset {
+>>>>>>> main
   display: flex;
   flex-direction: column;
   padding: 2rem;
 }
+<<<<<<< HEAD
 #contacto form fieldset input {
   padding-top: 1rem;
   margin-bottom: 1rem;
@@ -52,4 +97,46 @@ nav a:hover {
   border: none;
   color: rgb(161, 161, 161);
   border-bottom: 2px solid rgb(0, 0, 0);
+=======
+input {
+  background-color: rgb(255, 255, 255);
+  border: none;
+  border-bottom: 2px solid black;
+}
+textarea {
+  width: 100%;
+  min-height: 10rem;
+  max-height: 10rem;
+}
+form button {
+  padding: 1rem;
+  background: #000000;
+  border: none;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+  width: 100%;
+}
+form button:hover {
+  color: grey;
+}
+form .button-de {
+  display: flex;
+  width: 100%;
+}
+footer {
+  background-color: black;
+  padding: 2rem;
+  margin-top: 5rem;
+  color: white;
+  text-align: center;
+}
+footer nav a {
+  padding: 1rem;
+  font-size: 2rem;
+  color: white;
+}
+footer nav a:hover {
+  color: gray;
+>>>>>>> main
 }
