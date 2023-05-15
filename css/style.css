@@ -80,7 +80,13 @@ form button {
   cursor: pointer;
   width: 100%;
 }
-
+form button:hover {
+  color: grey;
+}
+form .button-de {
+  display: flex;
+  width: 100%;
+}
 footer {
   background-color: black;
   padding: 2rem;
