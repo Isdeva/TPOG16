@@ -90,3 +90,24 @@ window.addEventListener("load", () => {
     }
   }
 });
+/*Arrastrar cv */
+let sube = document.querySelector(".cv-bg");
+let accion = document.querySelector(".hiddent");
+
+sube.addEventListener("dragover", (e) => {
+  e.preventDefault();
+  e.stopPropagation();
+  e.target.classList.add("active");
+});
+
+sube.addEventListener("dragleave", (e) => {
+  e.preventDefault();
+  e.stopPropagation();
+  e.target.classList.remove("active");
+});
+
+accion.addEventListener("dragover", (e) => {
+  e.preventDefault();
+  e.stopPropagation();
+  e.target.classList.add("active");
+});

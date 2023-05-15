@@ -36,7 +36,7 @@
         </section>
         <form id="form" action="#" method="get">
           <fieldset>
-            <legend></legend>Datos personales</legend>
+            <legend>Datos personales</legend>
             <div class="form-control">
               <label for="nombreCompleto">Nombre y Apellido</label>
               <input type="text" id="nombreCompleto" placeholder="Ingrese su nombre" />
@@ -64,12 +64,19 @@
               </select>
             </div>
             <section class="cv-bg">
-            <div class="form-control ">
-              <input type="file" id="cv" />
-              <input type="button" value="Carga tu CV aca" id="btnCv" onclick="document.getElementById('cv').click()" />
-              <h6>Sube o arrastra tu archivo</h6>
-            </div>
-          </section>
+              <section class="hiddent">
+                <section class="form-control">
+                  <input type="file" id="cv" />
+                  <input
+                    type="button"
+                    value="Carga tu CV aca"
+                    id="btnCv"
+                    onclick="document.getElementById('cv').click()"
+                  />
+                  <h6 class="">Sube o arrastra tu archivo</h6>
+                </section>
+              </section>
+            </section>
           </fieldset>
           <section class="button-de">
             <button id="botonBorrar" type="reset">Borrar</button>
@@ -78,6 +85,7 @@
         </form>
       </section>
       <script src="js/validacionForm.js"></script>
+      ss
     </main>
     <footer>
       <nav>

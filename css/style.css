@@ -53,7 +53,7 @@ header nav a:hover {
 }
 form {
   background-color: rgb(255, 255, 255);
-  width: 25rem;
+  width: 30rem;
   border: 2px solid black;
 }
 form fieldset {
