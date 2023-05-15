@@ -4,11 +4,15 @@
   margin: 0;
 }
 header {
+  position: sticky;
+  top: 0;
   display: flex;
-  background-color: black;
   justify-content: space-between;
   align-items: center;
+  background-color: black;
+  width: 100%;
   padding: 10px;
+  z-index: 2;
 }
 .logo img {
   height: 50px;
@@ -16,15 +20,24 @@ header {
 nav a {
   text-decoration: none;
   color: white;
+  padding: 10px;
+  margin: 10px;
+  font-weight: bold;
 }
 nav a:hover {
   color: gray;
+  border-bottom: 0.2rem solid gray;
 }
 .direccion {
   text-align: center;
 }
 
-button{
+button {
   padding: 0.5rem 1rem;
   border-radius: 0.5rem;
+}
+#carouselExampleFade img {
+  height: 30rem;
+  object-fit: cover;
+  z-index: 1;
 }
