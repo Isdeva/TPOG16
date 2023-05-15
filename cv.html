@@ -33,34 +33,43 @@
       <section class="contenedor">
         <section class="cabecera">
           <h2>Trabaja con nosotros</h2>
-          <h4>Datos personales</h4>
         </section>
-        <form action="#" method="get">
+        <form id="form" action="#" method="get">
           <fieldset>
-            <legend>Contactos</legend>
-            <label for="nombreCompleto">Nombre y Apellido</label>
-            <input type="text" id="nombreCompleto" placeholder="Ingrese su nombre" />
-            <small></small>
-            <label for="phone">Teléfono</label>
-            <input type="tel" name="tele" id="tele" placeholder="Ingrese su teléfono" />
-            <small></small>
-            <label for="email">E-mail</label>
-            <input type="email" name="email" id="email" placeholder="Ingrese su correo electrónico" />
-            <small></small>
-            <label for="timezone">Disponilidad Horaria</label>
-            <select name="" id="timezone">
-              <option value="elegirOpcion">Elegir una opcion</option>
-              <option value="8 a 16">8hs a 16hs</option>
-              <option value="10 a 19">10hs a 19hs</option>
-              <option value="14 a 19">14hs a 21hs</option>
-              <option value="18 a 22">18hs a 00hs</option>
-              <option value="12 a 6">00hs a 07hs</option>
-              <small></small>
-            </select>
+            <legend></legend>Datos personales</legend>
             <div class="form-control">
+              <label for="nombreCompleto">Nombre y Apellido</label>
+              <input type="text" id="nombreCompleto" placeholder="Ingrese su nombre" />
+              <small></small>
+            </div>
+            <div class="form-control">
+              <label for="phone">Teléfono</label>
+              <input type="tel" name="tele" id="tele" placeholder="Ingrese su teléfono" />
+              <small></small>
+            </div>
+            <div class="form-control">
+              <label for="email">E-mail</label>
+              <input type="email" name="email" id="email" placeholder="Ingrese su correo electrónico" />
+              <small></small>
+            </div>
+            <div class="form-control">
+              <label for="timezone">Disponilidad Horaria</label>
+              <select name="" id="timezone">
+                <option value="elegirOpcion">Elegir una opcion</option>
+                <option value="8 a 16">8hs a 16hs</option>
+                <option value="10 a 19">10hs a 19hs</option>
+                <option value="14 a 19">14hs a 21hs</option>
+                <option value="18 a 22">18hs a 00hs</option>
+                <option value="12 a 6">00hs a 07hs</option>
+              </select>
+            </div>
+            <section class="cv-bg">
+            <div class="form-control ">
               <input type="file" id="cv" />
               <input type="button" value="Carga tu CV aca" id="btnCv" onclick="document.getElementById('cv').click()" />
+              <h6>Sube o arrastra tu archivo</h6>
             </div>
+          </section>
           </fieldset>
           <section class="button-de">
             <button id="botonBorrar" type="reset">Borrar</button>
@@ -68,6 +77,7 @@
           </section>
         </form>
       </section>
+      <script src="js/validacionForm.js"></script>
     </main>
     <footer>
       <nav>
@@ -80,6 +90,5 @@
       </p>
       <p>Derechos Reservados@2023</p>
     </footer>
-    <script src="js/validacionForm.js"></script>
   </body>
 </html>

@@ -1,19 +1,31 @@
-#trabajaConNosotros {
-  background: linear-gradient(rgb(98, 209, 145), white);
-}
-.contenedor {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  overflow: hidden;
-}
 .cabecera {
   color: rgb(0, 0, 0);
   border-bottom: 0em solid #f0f0f0;
   padding: 0.5em;
   float: inline-start;
   text-align: center;
+}
+
+form fieldset .form-control {
+  position: relative;
+  border: none;
+}
+.form-control.falla small {
+  visibility: visible;
+  color: #d74c3c;
+}
+
+.form-control {
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  position: relative;
+}
+.form-control input {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.5em;
+  width: 100%;
 }
 .form-control,
 input:focus {
@@ -27,9 +39,28 @@ input:focus {
   border: 0.1cap solid;
   border-color: #fe5f55;
 }
-
+.form-control small {
+  position: absolute;
+  font-size: small;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+}
+.form-control.falla small {
+  visibility: visible;
+  color: #d74c3c;
+}
 #cv {
   display: none;
+}
+.cv-bg {
+  border: 0.2rem dashed grey;
+  padding: 3rem 3rem 0;
+}
+.cv-bg h6 {
+  color: grey;
+  font-size: small;
 }
 #btnCv {
   display: block;
@@ -43,13 +74,11 @@ input:focus {
   text-align: center;
   font-size: 1rem;
 }
-
 #btnCv:hover {
   transition: all 0.4s;
   background-color: rgb(60, 114, 216);
-  border-bottom: rgb(60, 114, 216);
+  border-bottom: 0.3rem solid rgb(60, 114, 216);
 }
-
 #botonBorrar {
   background-color: rgba(95, 80, 80, 0.51);
   text-align: center;
@@ -63,14 +92,4 @@ input:focus {
 }
 #botonEnviar:hover {
   background-color: rgb(132, 0, 255);
-}
-.form-control small {
-  visibility: hidden;
-  position: absolute;
-  font-size: small;
-  text-align: right;
-}
-.form-control.falla small {
-  visibility: visible;
-  color: #d74c3c;
 }
