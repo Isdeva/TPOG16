@@ -74,7 +74,7 @@
 }
 
 #botonBorrar{
-    background-color: rgb(95, 80, 80);
+    background-color: rgba(95, 80, 80,0.51);
     text-align: right;
 }
 #botonBorrar:hover{
