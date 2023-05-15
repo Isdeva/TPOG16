@@ -17,27 +17,82 @@ header {
 .logo img {
   height: 50px;
 }
-nav a {
+header nav a {
   text-decoration: none;
   color: white;
   padding: 10px;
   margin: 10px;
   font-weight: bold;
 }
-nav a:hover {
+header nav a:hover {
   color: gray;
   border-bottom: 0.2rem solid gray;
 }
 .direccion {
   text-align: center;
 }
-
-button {
-  padding: 0.5rem 1rem;
-  border-radius: 0.5rem;
-}
 #carouselExampleFade img {
   height: 30rem;
   object-fit: cover;
   z-index: 1;
+}
+.contenedor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-size: 1.2rem;
+  position: relative;
+}
+.contenedor h2 {
+  padding: 2rem;
+  font-weight: bold;
+}
+.contenedor p {
+  padding: 0 5rem 4rem;
+}
+form {
+  background-color: rgb(255, 255, 255);
+  width: 25rem;
+  border: 2px solid black;
+}
+form fieldset {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+}
+input {
+  background-color: rgb(255, 255, 255);
+  border: none;
+  border-bottom: 2px solid black;
+}
+textarea {
+  width: 100%;
+  min-height: 10rem;
+  max-height: 10rem;
+}
+form button {
+  padding: 1rem;
+  background: #000000;
+  border: none;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+  width: 100%;
+}
+
+footer {
+  background-color: black;
+  padding: 2rem;
+  margin-top: 5rem;
+  color: white;
+  text-align: center;
+}
+footer nav a {
+  padding: 1rem;
+  font-size: 2rem;
+  color: white;
+}
+footer nav a:hover {
+  color: gray;
 }

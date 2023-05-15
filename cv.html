@@ -1,75 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/sytleForm.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" href="favicon/logo.ico" />
+    <title>Bienestar y Vida</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="css/sytleForm.css">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="icon" href="favicon/logo.ico" />
-  <title>Bienestar y Vida</title>
-</head>
+  <body>
+    <header id="header">
+      <a href="index.html" class="logo"><img src="./img/logo.png" alt="" /></a>
+      <nav>
+        <a href="index.html">Volver</a>
+      </nav>
+    </header>
 
-<body>
- <header id="header">
-    <a href="index.html" class="logo"><img src="./img/logo.png" alt="" /></a>
-    <nav>
-      <a href="index.html">Volver</a>
-    </nav>
-  </header> 
+    <section id="trabajaConNosotros">
+      <div class="cabecera">
+        <h2>Trabaja con nosotros</h2>
+        <h4>Datos personales</h4>
+      </div>
+      <div class="contenedor">
+        <form id="form" action="" method="get">
+          <div class="form-control">
+            <label for="nombreCompleto">Nombre y Apellido</label>
+            <input type="text" id="nombreCompleto" />
+            <small></small>
+          </div>
 
-  <section id="trabajaConNosotros">
-    <div class="cabecera">
-      <h2>Trabaja con nosotros</h2>
-      <h4>Datos personales</h4>
-    </div>
-    <div class="contenedor">
-      <form id="form" action="" method="get">
+          <div class="form-control">
+            <label for="tele">Telefono</label>
+            <input type="tel" id="tele" />
+            <small></small>
+          </div>
 
-        <div class="form-control">
-          <label for="nombreCompleto">Nombre y Apellido</label>
-          <input type="text" id="nombreCompleto">
-          <small></small>
-        </div>
+          <div class="form-control">
+            <label for="email">E-mail</label>
+            <input type="email" id="email" />
+            <small></small>
+          </div>
 
-        <div class="form-control">
-          <label for="tele">Telefono</label>
-          <input type="tel" id="tele">
-          <small></small>
-        </div>
+          <div class="form-control">
+            <label for="timezone">Disponilidad Horaria</label>
+            <select name="" id="timezone">
+              <option value="elegirOpcion">Elegir una opcion</option>
+              <option value="8 a 16">8hs a 16hs</option>
+              <option value="10 a 19">10hs a 19hs</option>
+              <option value="14 a 19">14hs a 21hs</option>
+              <option value="18 a 22">18hs a 00hs</option>
+              <option value="12 a 6">00hs a 07hs</option>
+            </select>
+          </div>
 
-        <div class="form-control">
-          <label for="email">E-mail</label>
-          <input type="email" id="email">
-          <small></small>
-        </div>
+          <div class="form-control">
+            <input type="file" id="cv" />
+            <input type="button" value="Carga tu CV aca" id="btnCv" onclick="document.getElementById('cv').click()" />
+          </div>
 
-        <div class="form-control">
-          <label for="timezone">Disponilidad Horaria</label>
-          <select name="" id="timezone">
-            <option value="elegirOpcion">Elegir una opcion</option>
-            <option value="8 a 16">8hs a 16hs</option>
-            <option value="10 a 19">10hs a 19hs</option>
-            <option value="14 a 19">14hs a 21hs</option>
-            <option value="18 a 22">18hs a 00hs</option>
-            <option value="12 a 6">00hs a 07hs</option>
-          </select>
-          <small></small>
-        </div>
-
-        <div class="form-control">
-          <input type="file" id="cv">
-          <input type="button" value="Carga tu CV aca" id="btnCv" onclick="document.getElementById('cv').click()">
-          <small></small>
-        </div>
-
-        <button id="botonBorrar" type="reset">Borrar</button>
-        <button id="botonEnviar" type="submit">Enviar</button>
-      </form>
-    </div>
-  </section>
-  <script src="js/validacionForm.js"></script>
-</body>
-
+          <button id="botonBorrar" type="reset">Borrar</button>
+          <button id="botonEnviar" type="submit">Enviar</button>
+        </form>
+      </div>
+    </section>
+    <script src="js/validacionForm.js"></script>
+  </body>
 </html>
