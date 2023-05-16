@@ -1,7 +1,11 @@
 * {
   box-sizing: border-box;
-  font-family: "Google Sans",Helvetica,Arial,sans-serif;
+  font-family: "Roboto", sans-serif;
   margin: 0;
+}
+body {
+  background: linear-gradient(rgb(98, 209, 145), white);
+  object-fit: cover;
 }
 header {
   position: sticky;
@@ -51,7 +55,6 @@ header nav a:hover {
 .contenedor p {
   padding: 0 5rem 4rem;
 }
-
 
 form {
   background-color: rgb(255, 255, 255);
@@ -105,35 +108,35 @@ footer nav a:hover {
   color: gray;
 }
 
-#servicios{
+#servicios {
   background-color: rgb(197, 216, 216);
   font-size: 1rem;
   margin: 2rem;
   padding: 2rem;
 }
 
-#contServicio{
+#contServicio {
   text-align: center;
 }
 
-.cards{
+.cards {
   display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 
-.content{
+.content {
   background-color: #efefee;
-  flex: 50%;
-  margin: 1em;
+  width: 35rem;
+  margin-top: 1em;
   padding: 2%;
   border: 0.2em double black;
-  display: flex;
-  flex-direction: column;  
 }
-.contents{
+.contents {
   flex: 50%;
   border-left: 0.5rem;
 }
-.iconosServicio{
+.iconosServicio {
   width: 20%;
   margin-left: 50%;
   margin-top: 5%;

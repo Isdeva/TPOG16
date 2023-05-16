@@ -1,6 +1,3 @@
-.contenedor {
-  background: linear-gradient(rgb(98, 209, 145), white);
-}
 .cabecera {
   color: rgb(0, 0, 0);
   border-bottom: 0em solid #f0f0f0;
@@ -26,7 +23,8 @@ form fieldset .form-control {
   padding: 0.5em;
   width: 100%;
 }
-.form-control,input:focus {
+.form-control,
+input:focus + label {
   outline: none;
 }
 .form-control small {
@@ -43,7 +41,6 @@ form fieldset .form-control {
   border-color: #fe5f55;
 }
 
-
 .form-control.falla small {
   visibility: visible;
   color: #d74c3c;
@@ -52,7 +49,7 @@ form fieldset .form-control {
   border: 0.1cap solid;
   border-color: #00d3a5;
 }
-.form-control.ok small{
+.form-control.ok small {
   visibility: hidden;
 }
 #cv {
