@@ -58,7 +58,8 @@ header nav a:hover {
 
 form {
   background-color: rgb(255, 255, 255);
-  width: 30rem;
+  width: 100%;
+  max-width: 30rem;
   border: 2px solid black;
 }
 form fieldset {
@@ -89,7 +90,6 @@ form button:hover {
   color: grey;
 }
 form .button-de {
-  display: flex;
   width: 100%;
 }
 footer {
@@ -127,14 +127,12 @@ footer nav a:hover {
 
 .content {
   background-color: #efefee;
-  width: 35rem;
+  /* width: 35rem; */
+  width: 32%;
+  min-width: 20rem;
   margin-top: 1em;
   padding: 2%;
   border: 0.2em double black;
-}
-.contents {
-  flex: 50%;
-  border-left: 0.5rem;
 }
 .iconosServicio {
   width: 20%;
