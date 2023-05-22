@@ -1,7 +1,11 @@
 * {
   box-sizing: border-box;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
   margin: 0;
+}
+body {
+  background: linear-gradient(rgb(98, 209, 145), white);
+  object-fit: cover;
 }
 header {
   position: sticky;
@@ -10,10 +14,6 @@ header {
   justify-content: space-between;
   align-items: center;
   background-color: black;
-<<<<<<< HEAD
-  position: fixed;
-=======
->>>>>>> main
   width: 100%;
   padding: 10px;
   z-index: 2;
@@ -26,7 +26,6 @@ header nav a {
   color: white;
   padding: 10px;
   margin: 10px;
-<<<<<<< HEAD
 }
 nav a:hover {
   color: rgb(161, 161, 161);
@@ -48,7 +47,6 @@ nav a:hover {
   background-color: rgb(158, 158, 190);
   border-radius: 0.5rem;
   border: 0.1rem solid black;
-=======
   font-weight: bold;
 }
 header nav a:hover {
@@ -78,18 +76,17 @@ header nav a:hover {
 .contenedor p {
   padding: 0 5rem 4rem;
 }
+
 form {
   background-color: rgb(255, 255, 255);
-  width: 25rem;
+  width: 30rem;
   border: 2px solid black;
 }
 form fieldset {
->>>>>>> main
   display: flex;
   flex-direction: column;
   padding: 2rem;
 }
-<<<<<<< HEAD
 #contacto form fieldset input {
   padding-top: 1rem;
   margin-bottom: 1rem;
@@ -97,7 +94,6 @@ form fieldset {
   border: none;
   color: rgb(161, 161, 161);
   border-bottom: 2px solid rgb(0, 0, 0);
-=======
 input {
   background-color: rgb(255, 255, 255);
   border: none;
@@ -138,5 +134,38 @@ footer nav a {
 }
 footer nav a:hover {
   color: gray;
->>>>>>> main
+}
+
+#servicios {
+  background-color: rgb(197, 216, 216);
+  font-size: 1rem;
+  margin: 2rem;
+  padding: 2rem;
+}
+
+#contServicio {
+  text-align: center;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.content {
+  background-color: #efefee;
+  width: 35rem;
+  margin-top: 1em;
+  padding: 2%;
+  border: 0.2em double black;
+}
+.contents {
+  flex: 50%;
+  border-left: 0.5rem;
+}
+.iconosServicio {
+  width: 20%;
+  margin-left: 50%;
+  margin-top: 5%;
 }

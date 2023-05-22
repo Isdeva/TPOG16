@@ -1,7 +1,6 @@
 window.addEventListener("load", () => {
   const form = document.getElementById("form");
   const nombreCompleto = document.getElementById("nombreCompleto");
-  /* const nDni = document.getElementById('NDni') */
   const telefono = document.getElementById("tele");
   const email = document.getElementById("email");
 
@@ -10,17 +9,10 @@ window.addEventListener("load", () => {
     validaCampos();
   });
 
-  form.addEventListener("change", (e) => {
-    e.preventDefault();
-    validaArchivo();
-  });
-
   const validaCampos = () => {
     const nombreValor = nombreCompleto.value.trim();
-    /*const nDniValor = nDni.value.trim() NO SON VALIDOS PARA NUMEROS*/
     const telefonoValor = telefono.value.trim();
     const emailValor = email.value.trim();
-    // const cvValor = cv.value.trim()
 
     //Valida campo nombre
     if (nombreValor === "") {
@@ -33,8 +25,7 @@ window.addEventListener("load", () => {
     //valida campo email
     if (!emailValor) {
       validacionFalla(email, "Campo vacio");
-    }
-    if (!validaEmail(emailValor)) {
+    } else if (!validaEmail(emailValor)) {
       validacionFalla(email, "El e-mail no es valido");
     } else {
       validacionOk(email);
@@ -55,9 +46,9 @@ window.addEventListener("load", () => {
     const formControl = input.parentElement;
     const aviso = formControl.querySelector("small");
     aviso.innerText = msje;
-
     formControl.className = "form-control falla";
   };
+
   const validacionOk = (input) => {
     const formControl = input.parentElement;
     formControl.className = "form-control ok";
@@ -72,21 +63,25 @@ window.addEventListener("load", () => {
   const validaTelefono = (telefono) => {
     return /^\d{2}\d{4}\d{4}$/.test(telefono);
   };
+});
+/*Arrastrar cv */
+let sube = document.querySelector(".cv-bg");
+let accion = document.querySelector(".hiddent");
 
-  //valida extension file
+sube.addEventListener("dragover", (e) => {
+  e.preventDefault();
+  e.stopPropagation();
+  e.target.classList.add("active");
+});
 
-  //Detalles a tener en cuenta, permite mas de un archivo
-  // esta obligado a subir un archivo o tira error (ARREGAR)
-  // y tira la exceptcion si comenzas por los primeros campos (ARREGAR)
-  function validaArchivo() {
-    let archivo = document.getElementById("cv");
-    let archivoRuta = archivo.value;
-    let ExtensAccept = /(.jpg|.jpeg|.png|.pdf)$/i;
-    if (!ExtensAccept.exec(archivoRuta)) {
-      validacionFalla(archivo, "Extensiones permitidas: jpeg | jpg | png | pdf");
-    } else if (archivo.files && archivo.files[0]) {
-      validacionOk(archivo);
-      console.log(archivoRuta);
-    }
-  }
+sube.addEventListener("dragleave", (e) => {
+  e.preventDefault();
+  e.stopPropagation();
+  e.target.classList.remove("active");
+});
+
+accion.addEventListener("dragover", (e) => {
+  e.preventDefault();
+  e.stopPropagation();
+  e.target.classList.add("active");
 });
