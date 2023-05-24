@@ -4,18 +4,18 @@
   margin: 0;
   padding: 0;
 }
-
+/* Header */
 header {
   position: sticky;
   top: 0;
+  z-index: 2;
+  padding: 10px;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: rgb(255, 255, 255);
   box-shadow: 5px 0 40px black;
-  width: 100%;
-  padding: 10px;
-  z-index: 2;
 }
 .logo img {
   height: 50px;
@@ -31,18 +31,17 @@ header nav a:hover {
   color: gray;
   border-bottom: 0.2rem solid gray;
 }
-#nosotros {
-  border: gray solid;
-  border-radius: 1em;
-  box-shadow: 5px 0 40px black;
-}
-.direccion {
-  text-align: center;
-}
+/* Carrusel de imagenes */
 #carouselExampleFade img {
   height: 30rem;
   object-fit: cover;
   z-index: 1;
+}
+/* Toda la pagina */
+.main {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
 }
 .contenedor {
   display: flex;
@@ -51,7 +50,7 @@ header nav a:hover {
   text-align: center;
   font-size: 1.2rem;
   position: relative;
-  padding: 6rem;
+  padding: 1rem;
 }
 .contenedor h2 {
   padding: 2rem;
@@ -59,6 +58,39 @@ header nav a:hover {
 }
 .contenedor p {
   padding: 0 5rem 4rem;
+}
+#nosotros {
+  border: gray solid;
+  border-radius: 1em;
+  box-shadow: 5px 0 40px black;
+}
+/* Servicios */
+#servicios {
+  border: gray solid;
+  border-radius: 1em;
+  box-shadow: 5px 0 40px black;
+}
+#contServicio {
+  text-align: center;
+}
+.cards {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 2rem;
+}
+.content {
+  background-color: #efefee;
+  width: 33%;
+  min-width: 16rem;
+  margin-top: 1rem;
+  padding: 1rem;
+  border: 0.2em double black;
+}
+.iconosServicio {
+  width: 20%;
+  margin-left: 50%;
+  margin-top: 5%;
 }
 #maps {
   width: 100%;
@@ -134,41 +166,10 @@ footer nav a {
 footer nav a:hover {
   color: gray;
 }
-
-#servicios {
-  /* background-color: rgb(197, 216, 216); */
-  border: gray solid;
-  border-radius: 1em;
-  box-shadow: 5px 0 40px black;
-  font-size: 1rem;
-  margin: 2rem;
-  padding: 2rem;
-}
-
-#contServicio {
+.direccion {
   text-align: center;
 }
 
-.cards {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-}
-
-.content {
-  background-color: #efefee;
-  /* width: 35rem; */
-  width: 32%;
-  min-width: 20rem;
-  margin-top: 1em;
-  padding: 2%;
-  border: 0.2em double black;
-}
-.iconosServicio {
-  width: 20%;
-  margin-left: 50%;
-  margin-top: 5%;
-}
 .go-top-container {
   position: fixed;
   bottom: 4rem;

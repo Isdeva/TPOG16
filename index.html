@@ -27,8 +27,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;500;700&display=swap" rel="stylesheet" />
     <title>Bienestar y Vida</title>
   </head>
-
   <body>
+    <!-- Header -->
     <header id="header">
       <a href="index.html" class="logo"><img src="img/logo.png" alt="Logo de la empresa" /></a>
       <nav>
@@ -40,6 +40,7 @@
       </nav>
     </header>
     <main>
+      <!-- Carrusel de imagenes -->
       <div id="carouselExampleFade" class="carousel slide carousel-fade">
         <div class="carousel-inner">
           <div class="carousel-item active">
@@ -61,101 +62,154 @@
           <span class="visually-hidden">Next</span>
         </button>
       </div>
-
-      <section class="contenedor">
-        <section id="nosotros">
-          <h2>Sobre nosotros</h2>
-          <p>
-            La seguridad y la comodidad de nuestros pacientes son siempre nuestra máxima prioridad. Trabajamos en
-            estrecha colaboración con las familias y los cuidadores para asegurarnos de que todas las necesidades estén
-            cubiertas y que se mantenga una comunicación clara y abierta en todo momento. Además, nos enorgullece
-            ofrecer precios asequibles y planes de atención a largo plazo para garantizar que nuestros clientes reciban
-            la mejor atención posible sin preocupaciones financieras.
-          </p>
-        </section>
-      </section>
-
-      <section id="servicios">
-        <div id="contServicio">
-          <h2>Nuestros servicios</h2>
-          <small
-            >Bienestar y vida, entiende que la atención domiciliaria es una tarea importante y delicada que requiere
-            habilidades y conocimientos especializados. Es por eso que nos enorgullece contar con algunos de los mejores
-            profesionales de atención domiciliaria del sector. Nuestros cuidadores están altamente capacitados,
-            experimentados y dedicados a proporcionar la mejor atención posible a sus seres queridos.
-          </small>
-        </div>
-        <div class="cards">
-          <div class="content">
-            <img
-              class="iconosServicio"
-              src="img/iconosDeServicios/servicio-de-limpieza.png"
-              alt="Servicio de limpieza"
-            />
-            <h3>Higene y Confort</h3>
-            <ul>
-              <li>Higiene personal asistido.</li>
-              <li>Elaboración de alimentos según dieta o régimen.</li>
-              <li>Administración de medicación y curaciones de heridas.</li>
-              <li>Control de signos vitales.</li>
-            </ul>
-          </div>
-
-          <div class="content">
-            <img class="iconosServicio" src="img/iconosDeServicios/tareas.png" alt="Tareas generales" />
-            <h3>Tareas generales</h3>
-            <ul>
-              <li>Mantenimiento limpieza general.</li>
-              <li>Lavado y planchado de ropa.</li>
-              <li>Compras domésticas, solicitud de turnos, interconsultas y practicas medicas</li>
-              <li>Acompañamiento a citas médicas.</li>
-              <li>Manejo de agenda y su historial de salud.</li>
-            </ul>
-          </div>
-
-          <div class="content">
-            <img class="iconosServicio" src="img/iconosDeServicios/meditacion (1).png" alt="Ejercicios" />
-            <h3>Actividades</h3>
-            <ul>
-              <li>Actividades recreativas.</li>
-              <li>Ejercicios de estimulación física para la movilidad y activación muscular.</li>
-              <li>Ejercitación de estimulación cognitiva.</li>
-              <li>Practicas para rehabilitación.</li>
-            </ul>
-          </div>
-        </div>
-      </section>
-
-      <section class="contenedor">
-        <section id="contacto">
-          <h2>Ubicación</h2>
-          <section id="maps">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.097371823734!2d-58.418079724825986!3d-34.6269795587261!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccaffd925f0af%3A0xa64c9ec0e5eaff86!2sCochabamba%203578%2C%20C1252ABJ%20CABA!5e0!3m2!1ses-419!2sar!4v1684435361361!5m2!1ses-419!2sar"
-              allowfullscreen=""
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
-            ></iframe>
+      <!-- Contenido del sitio -->
+      <section class="main">
+        <section class="contenedor">
+          <section id="nosotros">
+            <h2>Sobre nosotros</h2>
+            <p>
+              La seguridad y la comodidad de nuestros pacientes son siempre nuestra máxima prioridad. Trabajamos en
+              estrecha colaboración con las familias y los cuidadores para asegurarnos de que todas las necesidades
+              estén cubiertas y que se mantenga una comunicación clara y abierta en todo momento. Además, nos
+              enorgullece ofrecer precios asequibles y planes de atención a largo plazo para garantizar que nuestros
+              clientes reciban la mejor atención posible sin preocupaciones financieras.
+            </p>
           </section>
         </section>
-        <section id="contacto">
-          <h2>Contactos</h2>
-          <form action="#" method="get">
-            <fieldset>
-              <legend>Contactos</legend>
-              <label for="name">Nombre y Apellido</label>
-              <input type="text" name="name" id="name" placeholder="Ingrese su nombre" />
+        <section class="contenedor">
+          <section id="servicios">
+            <h2>Nuestros servicios</h2>
+            <p>
+              Bienestar y vida, entiende que la atención domiciliaria es una tarea importante y delicada que requiere
+              habilidades y conocimientos especializados. Es por eso que nos enorgullece contar con algunos de los
+              mejores profesionales de atención domiciliaria del sector. Nuestros cuidadores están altamente
+              capacitados, experimentados y dedicados a proporcionar la mejor atención posible a sus seres queridos.
+            </p>
+            <section class="cards">
+              <section class="content">
+                <img
+                  class="iconosServicio"
+                  src="img/iconosDeServicios/servicio-de-limpieza.png"
+                  alt="Servicio de limpieza"
+                />
+                <h3>Higene y Confort</h3>
+                <ul>
+                  <li>Higiene personal asistido.</li>
+                  <li>Elaboración de alimentos según dieta o régimen.</li>
+                  <li>Administración de medicación y curaciones de heridas.</li>
+                  <li>Control de signos vitales.</li>
+                </ul>
+              </section>
 
-              <label for="phone">Teléfono</label>
-              <input type="number" name="phone" id="phone" placeholder="Ingrese su teléfono" />
-              <label for="email">Correo electrónico</label>
-              <input type="email" name="email" id="email" placeholder="Ingrese su correo electrónico" />
+              <div class="content">
+                <img class="iconosServicio" src="img/iconosDeServicios/tareas.png" alt="Tareas generales" />
+                <h3>Tareas generales</h3>
+                <ul>
+                  <li>Mantenimiento limpieza general.</li>
+                  <li>Lavado y planchado de ropa.</li>
+                  <li>Compras domésticas, solicitud de turnos, interconsultas y practicas medicas</li>
+                  <li>Acompañamiento a citas médicas.</li>
+                  <li>Manejo de agenda y su historial de salud.</li>
+                </ul>
+              </div>
 
-              <label for="mesage">Cuerpo del mensaje</label>
-              <textarea name="mesage" id="mesage"></textarea>
-            </fieldset>
-            <button type="submit">Enviar</button>
-          </form>
+              <div class="content">
+                <img class="iconosServicio" src="img/iconosDeServicios/meditacion (1).png" alt="Ejercicios" />
+                <h3>Actividades</h3>
+                <ul>
+                  <li>Actividades recreativas.</li>
+                  <li>Ejercicios de estimulación física para la movilidad y activación muscular.</li>
+                  <li>Ejercitación de estimulación cognitiva.</li>
+                  <li>Practicas para rehabilitación.</li>
+                </ul>
+              </div>
+            </section>
+          </section>
+        </section>
+        <!-- <section id="servicios">
+          <section class="service-content">
+            <div id="contServicio">
+              <h2>Nuestros servicios</h2>
+              <small
+                >Bienestar y vida, entiende que la atención domiciliaria es una tarea importante y delicada que requiere
+                habilidades y conocimientos especializados. Es por eso que nos enorgullece contar con algunos de los
+                mejores profesionales de atención domiciliaria del sector. Nuestros cuidadores están altamente
+                capacitados, experimentados y dedicados a proporcionar la mejor atención posible a sus seres queridos.
+              </small>
+            </div>
+            <div class="cards">
+              <div class="content">
+                <img
+                  class="iconosServicio"
+                  src="img/iconosDeServicios/servicio-de-limpieza.png"
+                  alt="Servicio de limpieza"
+                />
+                <h3>Higene y Confort</h3>
+                <ul>
+                  <li>Higiene personal asistido.</li>
+                  <li>Elaboración de alimentos según dieta o régimen.</li>
+                  <li>Administración de medicación y curaciones de heridas.</li>
+                  <li>Control de signos vitales.</li>
+                </ul>
+              </div>
+
+              <div class="content">
+                <img class="iconosServicio" src="img/iconosDeServicios/tareas.png" alt="Tareas generales" />
+                <h3>Tareas generales</h3>
+                <ul>
+                  <li>Mantenimiento limpieza general.</li>
+                  <li>Lavado y planchado de ropa.</li>
+                  <li>Compras domésticas, solicitud de turnos, interconsultas y practicas medicas</li>
+                  <li>Acompañamiento a citas médicas.</li>
+                  <li>Manejo de agenda y su historial de salud.</li>
+                </ul>
+              </div>
+
+              <div class="content">
+                <img class="iconosServicio" src="img/iconosDeServicios/meditacion (1).png" alt="Ejercicios" />
+                <h3>Actividades</h3>
+                <ul>
+                  <li>Actividades recreativas.</li>
+                  <li>Ejercicios de estimulación física para la movilidad y activación muscular.</li>
+                  <li>Ejercitación de estimulación cognitiva.</li>
+                  <li>Practicas para rehabilitación.</li>
+                </ul>
+              </div>
+            </div>
+          </section>
+        </section> -->
+
+        <section class="contenedor">
+          <section id="contacto">
+            <h2>Ubicación</h2>
+            <section id="maps">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.097371823734!2d-58.418079724825986!3d-34.6269795587261!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccaffd925f0af%3A0xa64c9ec0e5eaff86!2sCochabamba%203578%2C%20C1252ABJ%20CABA!5e0!3m2!1ses-419!2sar!4v1684435361361!5m2!1ses-419!2sar"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </section>
+          </section>
+          <section id="contacto">
+            <h2>Contactos</h2>
+            <form action="#" method="get">
+              <fieldset>
+                <legend>Contactos</legend>
+                <label for="name">Nombre y Apellido</label>
+                <input type="text" name="name" id="name" placeholder="Ingrese su nombre" />
+
+                <label for="phone">Teléfono</label>
+                <input type="number" name="phone" id="phone" placeholder="Ingrese su teléfono" />
+                <label for="email">Correo electrónico</label>
+                <input type="email" name="email" id="email" placeholder="Ingrese su correo electrónico" />
+
+                <label for="mesage">Cuerpo del mensaje</label>
+                <textarea name="mesage" id="mesage"></textarea>
+              </fieldset>
+              <button type="submit">Enviar</button>
+            </form>
+          </section>
         </section>
       </section>
     </main>
