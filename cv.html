@@ -23,11 +23,19 @@
   </head>
 
   <body>
-    <header id="header">
-      <a href="index.html" class="logo"><img src="./img/logo.png" alt="" /></a>
-      <nav>
-        <a href="index.html">Volver</a>
-      </nav>
+    <header>
+      <section id="menu-desplegable">
+        <a href="index.html" class="logo"><img src="img/logo.png" alt="Logo de la empresa" /></a>
+        <input type="checkbox" id="menu" />
+        <label for="menu" class="menu-btn">
+          <i class="fas fa-bars"></i>
+        </label>
+        <nav class="menu">
+          <section class="menu-flex">
+            <a href="index.html">Volver</a>
+          </section>
+        </nav>
+      </section>
     </header>
     <main>
       <section class="contenedor">
@@ -73,6 +81,7 @@
                     onclick="document.getElementById('cv').click()"
                   />
                   <h6 class="">Sube o arrastra tu archivo</h6>
+                
                 </section>
               </section>
             </section>
@@ -84,13 +93,13 @@
         </form>
       </section>
       <script src="js/validacionForm.js"></script>
-      <!--       <script src="js/validacionCv.js"></script>
- -->
+      <!--       <script src="js/validacionCv.js"></script>-->
     </main>
     <footer>
       <nav>
-        <a href="#"><i class="fa-brands fa-square-facebook"></i></a
-        ><a href="#"><i class="fa-brands fa-instagram"></i></a><a href="#"><i class="fa-brands fa-youtube"></i></a>
+        <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-youtube"></i></a>
       </nav>
       <p class="direccion">
         Dirección: Cochabamba 3578 - Boedo, Capital <br />
