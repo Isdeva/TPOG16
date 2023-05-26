@@ -9,6 +9,8 @@ header {
   position: sticky;
   top: 0;
   z-index: 2;
+}
+#menu-desplegable {
   padding: 10px;
   width: 100%;
   display: flex;
@@ -30,6 +32,20 @@ header nav a {
 header nav a:hover {
   color: gray;
   border-bottom: 0.2rem solid gray;
+}
+#menu {
+  display: none;
+}
+.menu-btn {
+  padding: 0 8px 0 8px;
+  font-size: 1.5rem;
+  border: 0.3rem solid black;
+  border-radius: 5px;
+  display: none;
+}
+.menu-btn:hover {
+  color: grey;
+  border-color: grey;
 }
 /* Carrusel de imagenes */
 #carouselExampleFade img {
@@ -164,7 +180,7 @@ footer nav a {
   color: white;
 }
 footer nav a:hover {
-  color: gray;
+  color: grey;
 }
 .direccion {
   text-align: center;
@@ -228,5 +244,34 @@ footer nav a:hover {
   100% {
     width: 4rem;
     height: 4rem;
+  }
+}
+@media (max-width: 991px) {
+  .menu-btn {
+    display: block;
+  }
+  .menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: white;
+    display: none;
+  }
+  .menu-flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .menu a {
+    text-align: center;
+    width: 100%;
+  }
+  .menu a:hover {
+    border: none;
+  }
+  #menu:checked ~ .menu {
+    display: initial;
+    transition: all 0.5s;
   }
 }

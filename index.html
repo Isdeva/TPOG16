@@ -29,15 +29,23 @@
   </head>
   <body>
     <!-- Header -->
-    <header id="header">
-      <a href="index.html" class="logo"><img src="img/logo.png" alt="Logo de la empresa" /></a>
-      <nav>
-        <a href="">Principal</a>
-        <a href="#nosotros">Sobre nosotros</a>
-        <a href="#servicios">Nuestros servicios</a>
-        <a href="#contacto">Contactos</a>
-        <a href="cv.html">Trabajar en Bienestar y Vida</a>
-      </nav>
+    <header>
+      <section id="menu-desplegable">
+        <a href="index.html" class="logo"><img src="img/logo.png" alt="Logo de la empresa" /></a>
+        <input type="checkbox" id="menu" />
+        <label for="menu" class="menu-btn">
+          <i class="fas fa-bars"></i>
+        </label>
+        <nav class="menu">
+          <section class="menu-flex">
+            <a href="index.html">Principal</a>
+            <a href="#nosotros">Sobre nosotros</a>
+            <a href="#servicios">Nuestros servicios</a>
+            <a href="#contacto">Contactos</a>
+            <a href="cv.html">Trabajar en Bienestar y Vida</a>
+          </section>
+        </nav>
+      </section>
     </header>
     <main>
       <!-- Carrusel de imagenes -->
@@ -88,10 +96,13 @@
             <section class="cards">
               <section class="content">
                 <img
-                  class="iconosServicio" src="img/iconosDeServicios/servicio-de-limpieza.png" alt="Servicio de limpieza"/>
+                  class="iconosServicio"
+                  src="img/iconosDeServicios/servicio-de-limpieza.png"
+                  alt="Servicio de limpieza"
+                />
                 <h3>Higene y Confort</h3>
                 <ul>
-                 <li>Ayudar con la higiene personal.</li>
+                  <li>Ayudar con la higiene personal.</li>
                   <li>Elaboracion de alimentos segun a una dieta o régimen especificado.</li>
                   <li>Manejo de medicamentos y cuidado de heridas.</li>
                   <li>Control de signos vitales.</li>
