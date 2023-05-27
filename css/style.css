@@ -213,7 +213,7 @@ footer nav a:hover {
 .go-top-button {
   width: 0rem;
   height: 0rem;
-  background: rgba(24, 241, 13, 0.672);
+  background: rgba(13, 241, 165, 0.672);
   border-radius: 50%;
   cursor: pointer;
   transition: 0.5s;
