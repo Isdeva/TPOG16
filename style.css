@@ -13,6 +13,12 @@ p{
     width: 900px
     border-width auto 0px, 15px , 5px;
  }
+ /* .imagenesdecostado{
+    float: right;
+ } */
+/*  .textoaAIzquierda{
+    text-align: left;
+ } */
     
 #logo1{
     margin-top: auto;
@@ -90,4 +96,11 @@ a{
     font-size: 150%;
 }
 
-
+.ePrincipal{
+    display: block;
+    color: white;
+}
+.ePrincipal:hover{
+    color: rgb(98, 209, 145);
+    text-decoration: none;
+}
