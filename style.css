@@ -33,7 +33,7 @@ p{
 .go-top-button{
 width: 0rem;
 height: 0rem;
-background: rgb(24, 241, 13);
+background: rgba(24, 241, 13, 0.51);
 border-radius: 50%;
 cursor: pointer;
 transition: .5s;
