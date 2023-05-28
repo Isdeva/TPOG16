@@ -6,7 +6,7 @@
   text-align: center;
 }
 
-form fieldset .form-control {
+.form fieldset .form-control {
   position: relative;
   border: none;
 }
