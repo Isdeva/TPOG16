@@ -16,10 +16,19 @@ window.addEventListener("load", () => {
 
     //Valida campo nombre
     if (nombreValor === "") {
-      console.log("NOMBRE VACIO");
       validacionFalla(nombreCompleto, "Campo vacio");
     } else {
       validacionOk(nombreCompleto);
+    }
+
+     //valida campo telefono
+     if (!telefonoValor) {
+      //El telefono esta en formato String
+      validacionFalla(telefono, "Campo vacio");
+    } else if (!validaTelefono(telefonoValor)) {
+      validacionFalla(telefono, "El telefono no es valido");
+    } else {
+      validacionOk(telefono);
     }
 
     //valida campo email
@@ -31,15 +40,7 @@ window.addEventListener("load", () => {
       validacionOk(email);
     }
 
-    //valida campo telefono
-    if (!telefonoValor) {
-      //El telefono esta en formato String
-      validacionFalla(telefono, "Campo vacio");
-    } else if (!validaTelefono(telefonoValor)) {
-      validacionFalla(telefono, "El telefono no es valido");
-    } else {
-      validacionOk(telefono);
-    }
+   
   };
 
   const validacionFalla = (input, msje) => {
