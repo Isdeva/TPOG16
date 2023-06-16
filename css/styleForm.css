@@ -129,3 +129,11 @@ input:focus + label {
 .button-de {
   display: flex;
 }
+@media (max-width: 991px) {
+  .cv-bg h6 {
+    display: none;
+  }
+  .cv-bg {
+    border: none;
+  }
+}
