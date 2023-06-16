@@ -1,3 +1,15 @@
+.contenedor-cv {
+  display: flex;
+  justify-content: center;
+  font-size: 1.2rem;
+  position: relative;
+  padding: 1rem;
+  width: 100%;
+}
+.contenedor-cv .cabecera {
+  min-width: 18rem;
+  width: 50rem;
+}
 .cabecera {
   color: rgb(0, 0, 0);
   border-bottom: 0em solid #f0f0f0;
@@ -97,6 +109,7 @@ input:focus + label {
 #botonBorrar {
   background-color: rgba(95, 80, 80, 0.51);
   text-align: center;
+  border-bottom-right-radius: 0;
 }
 #botonBorrar:hover {
   color: white;
@@ -106,9 +119,13 @@ input:focus + label {
 #botonEnviar {
   background: #000000;
   text-align: center;
+  border-bottom-left-radius: 0;
 }
 #botonEnviar:hover {
   color: grey;
   box-shadow: 0px 0 10px black;
   transition: 0.1s;
+}
+.button-de {
+  display: flex;
 }
